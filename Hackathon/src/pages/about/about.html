@@ -7,24 +7,17 @@
 </ion-header>
 
 <ion-content padding>
-	<head>
-		<script>
-		alert(1);
-		console.log("getData called");
-		
-		</script>
-	</head>
-	<table style = "width: 100%">
-		<thead>
-			<tr>
-				<th style = "font-weight: bold"> Pill Name</th>
-				<th style = "font-weight: bold">Pills per dose</th>
-				<th style = "font-weight: bold">Times for dose</th>
-			</tr>
-		</thead>
-		<tbody>
-		</tbody>
-		
-	</table>
+	<body>
+		<table style = "width: 100%">
+			<thead>
+				<tr>
+					<th style = "font-weight: bold"> Pill Name</th>
+					<th style = "font-weight: bold">Pills per dose</th>
+					<th style = "font-weight: bold">Times for dose</th>
+				</tr>
+			</thead>
+		</table>
+		<button id="load" onclick="getData()">Load Data</button>
+	</body>
 
 </ion-content>
