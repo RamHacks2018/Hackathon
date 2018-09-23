@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <script data-ionic="inject">
+    (function(w){var i=w.Ionic=w.Ionic||{};i.version='3.9.2';i.angular='5.2.11';i.staticDir='build/';})(window);
+  </script>
+  <meta charset="UTF-8">
+  <title>Ionic App</title>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4e8ef7">
+
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- cordova.js required for cordova apps (remove if not needed) -->
+  <script src="cordova.js"></script>
+  
+  <!-- un-comment this code to enable service worker
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+    }
+  </script>-->
+
+  <link href="build/main.css" rel="stylesheet">
+  <style>
+    .formDiv {
+      margin: auto;
+      width: 80%;
+      height: 100%;
+      border: 3px solid #000000;
+      vertical-align: middle;
+      text-align: center;
+    }
+    .form{
+      text-align: center;
+    }
+    label{
+      font-family: "Times New Roman";
+      font-size: 32px;
+      display: inline-block;
+      float: left;
+      clear: left;
+      width: 400px;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    input{
+      display: inline-block;
+      font-size: 32px;
+      line-height: 35px;
+      padding-bottom: 20px;
+      max-width: 350px;
+      text-align: center;
+    }
+    table,th,td{
+      background-color: lightgray;
+      font-family: "Times New Roman";
+      border: 1px solid black;
+      font-weight: normal;
+    }
+    thead{
+      display: table-header-group;
+      vertical-align: middle;
+      border-color: inherit;
+      font-weight: bold;
+    }
+    #submit{
+      vertical-align: center;
+      width: 200px;
+      height: 50px;
+      font-size: 50px;
+      text-align: center;
+      border-radius: 8px; 
+      background-color: darkgray;
+    }
+    #load{
+      margin: auto;
+      height: 75px;
+      width: 80%;
+      background-color: darkgray;
+      font-size: 36px;
+      text-align: center;
+    }
+    #overviewTable{
+      text-align: center;
+      margin: auto;
+      max-width: 80%;
+      font-size: 30px;
+    }
+    .aboutDiv{
+      margin: auto;
+      width: 80%;
+    }
+    .developers{
+      margin: auto;
+      width: 60%;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+<script src = getData.js></script>
+<script src = parseData.js></script>
+<script src="getInput.js"></script>
+<script src = sendData.js></script>
+</head>
+<body>
+
+  <!-- Ionic's root component and where the app will load -->
+  <ion-app></ion-app>
+
+  <!-- The polyfills js is generated during the build process -->
+  <script src="build/polyfills.js"></script>
+
+  <!-- The vendor js is generated during the build process
+       It contains all of the dependencies in node_modules -->
+  <script src="build/vendor.js"></script>
+
+  <!-- The main bundle js is generated during the build process -->
+  <script src="build/main.js"></script>
+
+</body>
+</html>
